@@ -36,6 +36,7 @@
             >
           </div>
         </section>
+
         <section class="register-form-wrapper">
           <h2 class="register-form-heading">
             Sign up for the course and get free 7 days
@@ -43,13 +44,14 @@
           <form
             class="register-form"
             action="https://echo.htmlacademy.ru"
-            method="get"
+            method="post"
           >
             <input
               class="register-form-input"
               type="text"
               name="first-name"
               placeholder="First Name"
+              aria-label="First Name"
               required
             />
             <input
@@ -57,6 +59,7 @@
               type="text"
               name="last-name"
               placeholder="Last Name"
+              aria-label="Last Name"
               required
             />
             <input
@@ -64,6 +67,7 @@
               type="email"
               name="email"
               placeholder="Email Address"
+              aria-label="Email Address"
               required
             />
             <input
@@ -71,11 +75,18 @@
               type="password"
               name="password"
               placeholder="Password"
+              aria-label="Password"
               required
             />
             <button class="register-form-btn" type="submit">
               Claim your free trial
             </button>
+            <div class="register-form-notice">
+              By clicking the button, you are agreeing to our
+              <a class="register-form-notice-link" href="#"
+                >Terms and Services</a
+              >
+            </div>
           </form>
         </section>
       </div>
